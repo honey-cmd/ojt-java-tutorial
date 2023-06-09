@@ -13,6 +13,17 @@ public class Tutorial3C {
 
 		alist.add("Black");
 		System.out.println("ArrayList : " + alist);
+		
+		
+	String [] arr = alist.toArray(new String [alist.size()]);
+	
+for(String array : alist) {
+	System.out.println(array);
+}
+		
+		
+		
+		
 
 			}
 	}
