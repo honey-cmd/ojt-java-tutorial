@@ -17,7 +17,7 @@ public class Tutorial5 {
 
 		Random random = new Random();
 
-		System.out.println("Please enter one: 0=ROCK, 1=PAPER, 2=SCISSORS)");
+		System.out.println("Please enter one: 0=ROCK, 1=PAPER, 2=SCISSORS");
 		user = sc.nextInt();
 
 		if (user == rock) {
