@@ -1,6 +1,8 @@
 package main.java.tutorial;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Tutorial6 {
 
@@ -25,6 +27,14 @@ public class Tutorial6 {
 		boolean hasUpperCase = false;
 		boolean hasLowerCase = false;
 		boolean hasNumber = false;
+		boolean hasRegx = false;
+
+
+		Pattern pattern = Pattern.compile(password);
+		Matcher matcher = pattern.matcher(password);
+		
+	
+		
 
 		for (char c : password.toCharArray()) {
 			if (Character.isUpperCase(c)) {
@@ -34,12 +44,16 @@ public class Tutorial6 {
 
 			} else if (Character.isDigit(c)) {
 				hasNumber = true;
+			}else if (matcher.matches()) {
+				hasRegx = true;
 			}
-			if (hasUpperCase && hasLowerCase && hasNumber) {
+			
+			if (hasUpperCase && hasLowerCase && hasNumber && hasRegx) {
 				break;
 			}
+			
 		}
-		return hasUpperCase && hasLowerCase && hasNumber;
+		return hasUpperCase && hasLowerCase && hasNumber && hasRegx ;
 	}
 
 }
