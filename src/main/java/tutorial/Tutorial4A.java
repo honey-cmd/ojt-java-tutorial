@@ -11,7 +11,20 @@ public class Tutorial4A {
 		alist.add("White");
 
 		alist.add("Black");
-		System.out.println("Add ArrayList : " + alist);
+
+	System.out.println("ArrayList : " + alist);
+		
+		
+	String [] arr = alist.toArray(new String [alist.size()]);
+	
+for(String array : alist) {
+	System.out.println(array);
+}
+		
+		
+		
+		
+
 
 			}
 }
