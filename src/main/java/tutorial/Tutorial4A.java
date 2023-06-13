@@ -2,8 +2,7 @@ package main.java.tutorial;
 
 import java.util.ArrayList;
 
-public class Tutorial3C {
-
+public class Tutorial4A {
 	public static void main(String[] args) {
 		ArrayList<String> alist = new ArrayList<>();
 		alist.add("Red");
@@ -12,7 +11,8 @@ public class Tutorial3C {
 		alist.add("White");
 
 		alist.add("Black");
-		System.out.println("ArrayList : " + alist);
+
+	System.out.println("ArrayList : " + alist);
 		
 		
 	String [] arr = alist.toArray(new String [alist.size()]);
@@ -25,7 +25,6 @@ for(String array : alist) {
 		
 		
 
+
 			}
-	}
-
-
+}
